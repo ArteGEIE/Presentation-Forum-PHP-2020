@@ -11,3 +11,11 @@ make start
 ```
 
 Your talk is now available at http://localhost:1948/slides.md#/
+
+### Export to HTML
+
+```sh
+make build
+```
+
+HTML files are in `public` directory
