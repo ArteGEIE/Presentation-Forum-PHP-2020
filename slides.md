@@ -1,6 +1,5 @@
 ---
 title: Title
-theme: white
 ---
 
 ## First slide
