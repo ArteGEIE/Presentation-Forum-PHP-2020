@@ -1,10 +1,30 @@
-## Presentation Forum PHP 2020
+# Presentation Forum PHP 2020
 
-### Prerequirements
+## Prerequirements
 
-This project requires `docker`.
+This project requires `docker` or `node`.
 
-### Launching the Project
+## With Docker
+
+### Launch the project
+
+```sh
+make start-docker
+```
+
+Your talk is now available at http://localhost:1948/slides.md#/
+
+### Export to HTML
+
+```sh
+make build-docker
+```
+
+HTML files are in `public` directory
+
+## With Node
+
+### Launch and watch the project
 
 ```sh
 make start
@@ -19,3 +39,11 @@ make build
 ```
 
 HTML files are in `public` directory
+
+### Export to PDF
+
+```sh
+make pdf
+```
+
+`slides.pdf` is generate at the root

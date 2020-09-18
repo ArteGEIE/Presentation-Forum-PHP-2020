@@ -5,10 +5,22 @@ help:
 
 DOCKER := docker run --rm -p 1948:1948 -v ${PWD}:/slides -u=${UID} webpronl/reveal-md:latest
 
-start: ## start slides.md
+start-docker: ## start slides.md using Docker
 	$(DOCKER) slides.md --theme arte.css
 
-build: ## build slides to html in public dir
+build-docker: ## build slides to html in public dir using Docker
 	rm -rf public
 	$(DOCKER) slides.md --theme arte.css --static public
 	cp arte.svg Barna-Regular.woff2 public/_assets/
+
+start: ## start slides.md on watch mode
+	npm run start
+
+build:  ## build slides to html in public dir
+	rm -rf public
+	npm run build
+	cp arte.svg Barna-Regular.woff2 public/_assets/
+
+pdf: ## export to pdf, slides.pdf
+	rm -rf slides.pdf
+	npm run export-pdf

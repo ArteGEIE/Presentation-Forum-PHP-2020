@@ -1,0 +1,23 @@
+{
+  "name": "presentation-forum-php-2020",
+  "version": "1.0.0",
+  "description": "Comment ARTE a simplifié le développement multi-plateforme à l'aide d'une API orientée front ?",
+  "main": "slides.md",
+  "scripts": {
+    "start": "reveal-md slides.md --theme arte.css -w",
+    "build": "reveal-md slides.md --theme arte.css --static public",
+    "export-pdf": "reveal-md slides.md --theme arte.css --print slides.pdf"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArteGEIE/Presentation-Forum-PHP-2020.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ArteGEIE/Presentation-Forum-PHP-2020/issues"
+  },
+  "homepage": "https://github.com/ArteGEIE/Presentation-Forum-PHP-2020#readme",
+  "dependencies": {
+    "reveal-md": "^4.1.4"
+  }
+}
