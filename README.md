@@ -35,6 +35,14 @@ make build-docker
 
 HTML files are in `public` directory
 
+### Export to PDF
+
+```sh
+make pdf-docker
+```
+
+`slides.pdf` is generate in the root
+
 ## With Node
 
 ### Install dependencies
@@ -58,11 +66,3 @@ make build
 ```
 
 HTML files are in `public` directory
-
-### Export to PDF
-
-```sh
-make pdf
-```
-
-`slides.pdf` is generate at the root
