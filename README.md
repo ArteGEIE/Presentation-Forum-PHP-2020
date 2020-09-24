@@ -24,6 +24,12 @@ HTML files are in `public` directory
 
 ## With Node
 
+### Install dependencies
+
+```sh
+make install
+```
+
 ### Launch and watch the project
 
 ```sh
