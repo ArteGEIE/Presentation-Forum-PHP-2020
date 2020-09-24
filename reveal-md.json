@@ -1,4 +1,5 @@
 {
   "theme": "arte.css",
-  "highlightTheme": "night-owl"
+  "highlightTheme": "night-owl",
+  "staticDirs": "images"
 }

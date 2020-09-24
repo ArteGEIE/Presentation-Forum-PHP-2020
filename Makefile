@@ -11,8 +11,9 @@ start-docker: ## start slides.md using Docker
 
 build-docker: ## build slides to html in public dir using Docker
 	rm -rf public
-	$(REVEAL-MD) slides.md --static public --static-dirs=images
+	$(REVEAL-MD) slides.md --static public
 	cp arte.svg Barna-Regular.woff2 public/_assets/
+	cp .nojekyll public/
 
 pdf-docker: ## export to pdf, slides.pdf
 	rm -rf slides.pdf
@@ -29,3 +30,4 @@ build:  ## build slides to html in public dir
 	rm -rf public
 	npm run build
 	cp arte.svg Barna-Regular.woff2 public/_assets/
+	cp .nojekyll public/
