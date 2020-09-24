@@ -2,205 +2,139 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>
-      Comment ARTE a simplifié le développement multi-plateforme à l’aide d’une
-      API orientée front
-    </title>
+    <title>Comment ARTE a simplifié le développement multi-plateforme à l’aide d’une API orientée front</title>
     <link rel="stylesheet" href="./dist/reveal.css" />
-    <link rel="stylesheet" href="static/arte.css" id="theme" />
+    <link rel="stylesheet" href="_assets/arte.css" id="theme" />
     <link rel="stylesheet" href="./css/highlight/night-owl.css" />
+
   </head>
   <body>
     <div class="reveal">
-      <div class="slides">
-        <section data-markdown>
-          <script type="text/template">
+      <div class="slides"><section  data-markdown><script type="text/template">
 
-            <!-- .slide: data-background="./images/background-cheers.jpg" -->
+<!-- .slide: data-background="./images/background-cheers.jpg" -->
 
-            ## Comment ARTE a simplifié le développement multi-plateforme à l’aide d’une API orientée front
-          </script>
-        </section>
-        <section data-markdown>
-          <script type="text/template">
-            #### ARTE est une chaîne de télévision culturelle européenne
+## Comment ARTE a simplifié le développement multi-plateforme à l’aide d’une API orientée front
+</script></section><section  data-markdown><script type="text/template">
+#### ARTE est une chaîne de télévision culturelle européenne
 
-            ![ARTE en bref](images/arte-en-bref.png) <!-- .element width="100%" -->
+![ARTE en bref](images/arte-en-bref.png) <!-- .element width="100%" -->
 
-            - disponible en 6 langues
-            - programmes disponibles sur internet depuis 2007
-          </script>
-        </section>
-        <section data-markdown>
-          <script type="text/template">
-            <!-- .slide: data-background="./images/background-apple-tv-remote.jpg" -->
+- disponible en 6 langues
+- programmes disponibles sur internet depuis 2007
+</script></section><section  data-markdown><script type="text/template">
+<!-- .slide: data-background="./images/background-apple-tv-remote.jpg" -->
 
-            ## Les applications d'ARTE
-          </script>
-        </section>
-        <section data-markdown>
-          <script type="text/template">
-            ### ARTE est disponible partout (ou presque)
+## Les applications d'ARTE
+</script></section><section  data-markdown><script type="text/template">
+### ARTE est disponible partout (ou presque)
 
-            - sur le web (arte.tv)
-            - sur mobile et tablette (iOS et Android)
-            - sur TV connectée (HbbTV, Apple TV et Android TV)
-            - sur les box FAI (Free et Orange)
-          </script>
-        </section>
-        <section data-markdown>
-          <script type="text/template">
-            ### Les particularités des plateformes
+- sur le web (arte.tv)
+- sur mobile et tablette (iOS et Android)
+- sur TV connectée (HbbTV, Apple TV et Android TV)
+- sur les box FAI (Free et Orange)
+</script></section><section  data-markdown><script type="text/template">
+### Les particularités des plateformes
 
-            Chaque plateforme dispose de ses propres codes et contraintes
+Chaque plateforme dispose de ses propres codes et contraintes
 
-            - contrôle à la souris, au doigt ou à la télécommande
-            - accès au réseau (fibre vs 4G)
-            - navigation par url ou par deeplink
-            - notifications push
-          </script>
-        </section>
-        <section data-markdown>
-          <script type="text/template">
-            ### Supports différents, expérience unifiée
+- contrôle à la souris, au doigt ou à la télécommande
+- accès au réseau (fibre vs 4G)
+- navigation par url ou par deeplink
+- notifications push
+</script></section><section  data-markdown><script type="text/template">
+### Supports différents, expérience unifiée
 
-            ![ARTE partout](images/arte-multi-device.png) <!-- .element width="100%" -->
+![ARTE partout](images/arte-multi-device.png) <!-- .element width="100%" -->
 
-            - structure d'application similaire
-            - même catalogue de programmes
-          </script>
-        </section>
-        <section data-markdown>
-          <script type="text/template">
-            <!-- .slide: data-background="./images/background-cassette.jpg" -->
+- structure d'application similaire
+- même catalogue de programmes
+</script></section><section  data-markdown><script type="text/template">
+<!-- .slide: data-background="./images/background-cassette.jpg" -->
 
-            ## Les premières API d'ARTE
-          </script>
-        </section>
-        <section data-markdown>
-          <script type="text/template">
-            ### Approche orientée métier (ou CRUD)
+## Les premières API d'ARTE
+</script></section><section  data-markdown><script type="text/template">
+### Approche orientée métier (ou CRUD)
 
-            - un endpoint par type d'entité
-              - vidéo
-              - collection
-            - un même endpoint peut servir pour plusieurs cas d'utilisation
-          </script>
-        </section>
-        <section data-markdown>
-          <script type="text/template">
-            ### Exemple : le endpoint `/videos`
+- un endpoint par type d'entité
+  - vidéo
+  - collection
+- un même endpoint peut servir pour plusieurs cas d'utilisation
+</script></section><section  data-markdown><script type="text/template">
+### Exemple : le endpoint `/videos`
 
-            Pour récupérer les vidéos les plus vues :
+Pour récupérer les vidéos les plus vues :
 
-            ```javascript
-            https://www.arte.tv/api/videos?sort=-views
-            ```
+```javascript
+https://www.arte.tv/api/videos?sort=-views
+```
 
-            Pour récupérer les vidéos les plus récentes :
+Pour récupérer les vidéos les plus récentes :
 
-            ```javascript
-            https://www.arte.tv/api/videos?sort=-availabilityDate
-            ```
-          </script>
-        </section>
-        <section data-markdown>
-          <script type="text/template">
-            <!-- .slide: data-background="./images/requests-breakdown.jpg" -->
-          </script>
-        </section>
-        <section data-markdown>
-          <script type="text/template">
-            ### Problématiques de l'approche orientée métier
+```javascript
+https://www.arte.tv/api/videos?sort=-availabilityDate
+```
+</script></section><section  data-markdown><script type="text/template">
+<!-- .slide: data-background="./images/requests-breakdown.jpg" -->
+</script></section><section  data-markdown><script type="text/template">
+### Problématiques de l'approche orientée métier
 
-            - beaucoup de calls API par écran
-            - beaucoup de paramètres par endpoint
-            - API complexe à utiliser
-            - contenu des apps front difficile à uniformiser
-          </script>
-        </section>
-        <section data-markdown>
-          <script type="text/template">
-            <!-- .slide: data-background="./images/background-architecture.jpg" -->
+- beaucoup de calls API par écran
+- beaucoup de paramètres par endpoint
+- API complexe à utiliser
+- contenu des apps front difficile à uniformiser
+</script></section><section  data-markdown><script type="text/template">
+<!-- .slide: data-background="./images/background-architecture.jpg" -->
 
-            ## L'API eMac
-          </script>
-        </section>
-        <section data-markdown>
-          <script type="text/template">
-            ### Le pattern BFF
-          </script>
-        </section>
-        <section data-markdown>
-          <script type="text/template">
-            ### Une API au service du front
+## L'API eMac
+</script></section><section  data-markdown><script type="text/template">
+### Le pattern BFF
+</script></section><section  data-markdown><script type="text/template">
+### Une API au service du front
 
-            structure de l'API = structure des apps front
+structure de l'API = structure des apps front
 
-            ```javasscript
-            [Page]
-              - title
-              - description
-              [Zones]
-                - template
-                [Teasers]
-                  - title
-                  - image
-                  - url
-                  - deeplink
-            ```
+```javasscript
+[Page]
+  - title
+  - description
+  [Zones]
+    - template
+    [Teasers]
+      - title
+      - image
+      - url
+      - deeplink
+```
 
-            - 1 appel API suffit pour récupérer l'intégralité d'un écran
-            - même call pour tous les supports
-          </script>
-        </section>
-        <section data-markdown>
-          <script type="text/template">
-            ### Et pourquoi pas GraphQL ?
-          </script>
-        </section>
-        <section data-markdown>
-          <script type="text/template">
-            ## Comment eMac permet-il de simplifier le développement des fronts
-          </script>
-        </section>
-        <section data-markdown>
-          <script type="text/template">
-            ## Une approche idéale ?
-          </script>
-        </section>
-        <section data-markdown>
-          <script type="text/template">
-            ### Un travail collaboratif
+- 1 appel API suffit pour récupérer l'intégralité d'un écran
+- même call pour tous les supports
+</script></section><section  data-markdown><script type="text/template">
+### Et pourquoi pas GraphQL ?
+</script></section><section  data-markdown><script type="text/template">
+## Comment eMac permet-il de simplifier le développement des fronts
+</script></section><section  data-markdown><script type="text/template">
+## Une approche idéale ?
+</script></section><section  data-markdown><script type="text/template">
+### Un travail collaboratif
 
-            - 3 développeurs du côté de Marmelab
-            - 2 chefs de projet du côté d'ARTE
+- 3 développeurs du côté de Marmelab
+- 2 chefs de projet du côté d'ARTE
 
-            Une équipe proche du front, orientée web mais en concertation régulière avec les équipes front mobile et TV
-          </script>
-        </section>
-        <section data-markdown>
-          <script type="text/template">
-            ### Références
+Une équipe proche du front, orientée web mais en concertation régulière avec les équipes front mobile et TV
+</script></section><section  data-markdown><script type="text/template">
+### Références
 
-            - BFFs and GraphQL, terms you should know and why - Chris BAILEY : https://www.youtube.com/watch?v=B5OdK21ZevI
-            - ARTE’s API strategy & architecture - Matthieu BREEN : https://www.youtube.com/watch?v=bsCOU7131lM
-            - 6play_API-v2-Final(1).doc - Benoit VIGUIER : https://www.youtube.com/watch?v=Y_umU8mTWho
-          </script>
-        </section>
-        <section data-markdown>
-          <script type="text/template">
-            ## Merci de nous avoir écouté !
+- BFFs and GraphQL, terms you should know and why - Chris BAILEY : https://www.youtube.com/watch?v=B5OdK21ZevI
+- ARTE’s API strategy & architecture - Matthieu BREEN : https://www.youtube.com/watch?v=bsCOU7131lM
+- 6play_API-v2-Final(1).doc - Benoit VIGUIER : https://www.youtube.com/watch?v=Y_umU8mTWho
+</script></section><section  data-markdown><script type="text/template">
+## Merci de nous avoir écouté !
 
-            Des questions ?
-          </script>
-        </section>
-      </div>
+Des questions ?
+</script></section></div>
     </div>
 
     <script src="./dist/reveal.js"></script>
@@ -230,14 +164,14 @@
         progress: true,
         history: true,
         center: true,
-        transition: "default", // none/fade/slide/convex/concave/zoom
+        transition: 'default', // none/fade/slide/convex/concave/zoom
         plugins: [
           RevealMarkdown,
           RevealHighlight,
           RevealZoom,
           RevealNotes,
-          RevealMath,
-        ],
+          RevealMath
+        ]
       };
 
       // options from URL query string
@@ -245,6 +179,7 @@
 
       var options = extend(defaultOptions, {}, queryOptions);
     </script>
+
 
     <script>
       Reveal.initialize(options);
