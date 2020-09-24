@@ -13,6 +13,9 @@ build-docker: ## build slides to html in public dir using Docker
 	$(DOCKER) slides.md --theme arte.css --static public
 	cp arte.svg Barna-Regular.woff2 public/_assets/
 
+install: ## Install dependencies
+	npm i
+
 start: ## start slides.md on watch mode
 	npm run start
 
