@@ -5,7 +5,7 @@
   "main": "slides.md",
   "scripts": {
     "start": "reveal-md slides.md --theme arte.css -w",
-    "build": "reveal-md slides.md --theme arte.css --static public",
+    "build": "reveal-md slides.md --theme arte.css --static public --static-dirs=images",
     "export-pdf": "reveal-md slides.md --theme arte.css --print slides.pdf"
   },
   "repository": {

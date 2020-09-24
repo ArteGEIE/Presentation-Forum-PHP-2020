@@ -10,7 +10,7 @@ start-docker: ## start slides.md using Docker
 
 build-docker: ## build slides to html in public dir using Docker
 	rm -rf public
-	$(DOCKER) slides.md --theme arte.css --static public
+	$(DOCKER) slides.md --theme arte.css --static public --static-dirs=images
 	cp arte.svg Barna-Regular.woff2 public/_assets/
 
 install: ## Install dependencies
