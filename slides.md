@@ -8,12 +8,12 @@ title: Comment ARTE a simplifié le développement multi-plateforme à l’aide 
 
 ---
 
-### ARTE est une chaîne de télévision culturelle européenne
+#### ARTE est une chaîne de télévision culturelle européenne
+
+![ARTE en bref](images/arte-en-bref.png) <!-- .element width="100%" -->
 
 - disponible en 6 langues
 - programmes disponibles sur internet depuis 2007
-
-![ARTE en bref](images/arte-en-bref.png) <!-- .element width="100%" -->
 
 ---
 
@@ -45,10 +45,10 @@ Chaque plateforme dispose de ses propres codes et contraintes
 
 ### Supports différents, expérience unifiée
 
+![ARTE partout](images/arte-multi-device.png) <!-- .element width="100%" -->
+
 - structure d'application similaire
 - même catalogue de programmes
-
-![ARTE partout](images/arte-multi-device.png) <!-- .element width="100%" -->
 
 ---
 
@@ -58,11 +58,41 @@ Chaque plateforme dispose de ses propres codes et contraintes
 
 ---
 
-### Historique
+### Approche orientée métier (ou CRUD)
+
+- un endpoint par type d'entité
+  - vidéo
+  - collection
+- un même endpoint peut servir pour plusieurs cas d'utilisation
 
 ---
 
-### Problématiques de l'approche "orientée métier"
+### Exemple : le endpoint `/videos`
+
+Pour récupérer les vidéos les plus vues :
+
+```javascript
+https://www.arte.tv/api/videos?sort=-views
+```
+
+Pour récupérer les vidéos les plus récentes :
+
+```javascript
+https://www.arte.tv/api/videos?sort=-availabilityDate
+```
+
+---
+
+<!-- .slide: data-background="./images/requests-breakdown.jpg" -->
+
+---
+
+### Problématiques de l'approche orientée métier
+
+- beaucoup de calls API par écran
+- beaucoup de paramètres par endpoint
+- API complexe à utiliser
+- contenu des apps front difficile à uniformiser
 
 ---
 
@@ -77,6 +107,24 @@ Chaque plateforme dispose de ses propres codes et contraintes
 ---
 
 ### Une API au service du front
+
+structure de l'API = structure des apps front
+
+```javasscript
+[Page]
+  - title
+  - description
+  [Zones]
+    - template
+    [Teasers]
+      - title
+      - image
+      - url
+      - deeplink
+```
+
+- 1 appel API suffit pour récupérer l'intégralité d'un écran
+- même call pour tous les supports
 
 ---
 
@@ -112,31 +160,3 @@ Une équipe proche du front, orientée web mais en concertation régulière avec
 ## Merci de nous avoir écouté !
 
 Des questions ?
-
----
-
-## Code slide
-
-```javasscript
-function $initHighlight(block, cls) {
-  try {
-    if (cls.search(/\bno\-highlight\b/) != -1)
-      return process(block, true, 0x0F) +
-             ` class="${cls}"`;
-  } catch (e) {
-    /* handle exception */
-  }
-  for (var i = 0 / 2; i < classes.length; i++) {
-    if (checkCondition(classes[i]) === undefined)
-      console.log('undefined');
-  }
-
-  return (
-    <div>
-      <web-component>{block}</web-component>
-    </div>
-  )
-}
-
-export  $initHighlight;
-```
