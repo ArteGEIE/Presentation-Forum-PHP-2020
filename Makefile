@@ -3,15 +3,21 @@ export UID = $(shell id -u)
 help:
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
-DOCKER := docker run --rm -p 1948:1948 -v ${PWD}:/slides -u=${UID} webpronl/reveal-md:latest
+REVEAL-MD := docker run --rm -p 1948:1948 -v ${PWD}:/slides -u=${UID} webpronl/reveal-md:latest
+DECKTAPE := docker run --rm -t -v ${PWD}:/slides -v ${PWD}:${PWD}/public astefanutti/decktape
 
 start-docker: ## start slides.md using Docker
-	$(DOCKER) slides.md --theme arte.css
+	$(REVEAL-MD) slides.md
 
 build-docker: ## build slides to html in public dir using Docker
 	rm -rf public
-	$(DOCKER) slides.md --theme arte.css --static public
+	$(REVEAL-MD) slides.md --static public --static-dirs=images
 	cp arte.svg Barna-Regular.woff2 public/_assets/
+
+pdf-docker: ## export to pdf, slides.pdf
+	rm -rf slides.pdf
+	make build-docker
+	$(DECKTAPE) --size='2048x1536' reveal ./public/slides.html slides.pdf
 
 install: ## Install dependencies
 	npm i
@@ -23,7 +29,3 @@ build:  ## build slides to html in public dir
 	rm -rf public
 	npm run build
 	cp arte.svg Barna-Regular.woff2 public/_assets/
-
-pdf: ## export to pdf, slides.pdf
-	rm -rf slides.pdf
-	npm run export-pdf
