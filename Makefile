@@ -6,11 +6,11 @@ help:
 DOCKER := docker run --rm -p 1948:1948 -v ${PWD}:/slides -u=${UID} webpronl/reveal-md:latest
 
 start-docker: ## start slides.md using Docker
-	$(DOCKER) slides.md --theme arte.css
+	$(DOCKER) slides.md
 
 build-docker: ## build slides to html in public dir using Docker
 	rm -rf public
-	$(DOCKER) slides.md --theme arte.css --static public --static-dirs=images
+	$(DOCKER) slides.md --static public --static-dirs=images
 	cp arte.svg Barna-Regular.woff2 public/_assets/
 
 install: ## Install dependencies
