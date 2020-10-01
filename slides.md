@@ -54,15 +54,15 @@ Chaque plateforme dispose de ses propres codes et contraintes
 
 <!-- .slide: data-background="./images/background-cassette.jpg" -->
 
-## Les premières API d'ARTE
+## Les premières APIs d'ARTE
 
 ---
 
-### Approche orientée métier (ou CRUD)
+### Approche orientée métier
 
-- un endpoint par type d'entité
-  - vidéo
-  - collection
+La structure des première APIs d'ARTE reflète les entités de la base de données
+
+- un endpoint par type d'entité (vidéos, collections, ...)
 - un même endpoint peut servir pour plusieurs cas d'utilisation
 
 ---
@@ -102,7 +102,17 @@ https://www.arte.tv/api/videos?sort=-availabilityDate
 
 ---
 
-### Le pattern BFF
+### Une API orientée front (ou BFF)
+
+L'API front n'est pas un reflet de la base de données mais un reflet de l'application front
+
+- renvoie des objets `page` consolidés
+- récupère les données auprès des APIs orientées métier
+- pré-process les données pour les apps front
+
+---
+
+<!-- .slide: data-background="./images/emac-bff.jpg" -->
 
 ---
 
@@ -113,30 +123,89 @@ structure de l'API = structure des apps front
 ```javasscript
 [Page]
   - title
-  - description
   [Zones]
-    - template
+    - title
+    - description
     [Teasers]
       - title
+      - subtitle
       - image
       - url
       - deeplink
 ```
 
-- 1 appel API suffit pour récupérer l'intégralité d'un écran
+- 1 appel API pour récupérer l'intégralité d'un écran
+- ne renvoie que les champs utiles
 - même call pour tous les supports
 
 ---
 
-### Et pourquoi pas GraphQL ?
+<!-- .slide: data-background="./images/screenshot-page.jpg" -->
 
 ---
 
-## Comment eMac permet-il de simplifier le développement des fronts
+<!-- .slide: data-background="./images/screenshot-zones.jpg" -->
 
 ---
+
+<!-- .slide: data-background="./images/screenshot-teasers.jpg" -->
+
+---
+
+<!-- .slide: data-background="./images/background-cirque.jpg" -->
+
+## Et pourquoi pas GraphQL ?
+
+---
+
+### Les promesses de GraphQL :
+
+- limiter les appels API
+- offrir plus de liberté aux front
+- mettre fin au versioning
+
+GraphQL semble plus adapté à une API ouverte qu'à une API spécialisée
+
+---
+
+<!-- .slide: data-background="./images/background-bicycle.jpg" -->
+
+## Comment eMac permet de simplifier le développement des apps front
+
+---
+
+### En facilitant la vie des développeurs front
+
+- une seule API à maitriser
+- routing simple et peu de paramètres
+- plus besoin de se soucier des problématiques métier
+
+---
+
+### En offrant plus de flexibilité
+
+- structure éditable sans mise-à-jour côté front
+- découple les apps front des APIs métier
+
+---
+
+<!-- .slide: data-background="./images/background-summer.jpg" -->
 
 ## Une approche idéale ?
+
+---
+
+### Le BFF est un concept qui ne convient pas à tout le monde
+
+- nécessite une bonne proximité entre les équipes back et front-end
+- un service de plus à maintenir
+- l'approche est-elle encore pertinente depuis HTTP/2 ?
+
+---
+
+<!-- .slide: data-background="./images/background-santa-monica.jpg" -->
+
+## Pour finir...
 
 ---
 
@@ -145,7 +214,7 @@ structure de l'API = structure des apps front
 - 3 développeurs du côté de Marmelab
 - 2 chefs de projet du côté d'ARTE
 
-Une équipe proche du front, orientée web mais en concertation régulière avec les équipes front mobile et TV
+Une équipe proche du front, orientée web mais en concertation régulière avec les équipes mobile et TV
 
 ---
 
