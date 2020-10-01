@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/ArteGEIE/Presentation-Forum-PHP-2020#readme",
   "dependencies": {
-    "reveal-md": "^4.1.4"
+    "reveal-md": "^4.1.6"
   }
 }
