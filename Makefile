@@ -18,7 +18,7 @@ build-docker: ## build slides to html in public dir using Docker
 pdf-docker: ## export to pdf, slides.pdf
 	rm -rf slides.pdf
 	make build-docker
-	$(DECKTAPE) --size='2048x1536' reveal ./public/slides.html slides.pdf
+	$(DECKTAPE) --size='1920x1200' reveal ./public/slides.html slides.pdf
 
 install: ## Install dependencies
 	npm i
