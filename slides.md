@@ -1,14 +1,14 @@
 ---
-title: Comment ARTE a simplifié le développement multi-plateforme à l’aide d’une API orientée front
+title: Comment ARTE a simplifié le développement multi-plateforme à l’aide d’une API orientée front ?
 ---
 
 <!-- .slide: data-background="./images/background-cheers.jpg" -->
 
-## Comment ARTE a simplifié le développement multi-plateforme à l’aide d’une API orientée front
+## Comment ARTE a simplifié le développement multi-plateforme à l’aide d’une API orientée front ?
 
 ---
 
-#### ARTE est une chaîne de télévision culturelle européenne
+#### ARTE est une chaîne de télévision culturelle européenne :
 
 ![ARTE en bref](images/arte-en-bref.png) <!-- .element width="100%" -->
 
@@ -23,7 +23,7 @@ title: Comment ARTE a simplifié le développement multi-plateforme à l’aide 
 
 ---
 
-### ARTE est disponible partout (ou presque)
+### ARTE est disponible partout (ou presque) :
 
 - sur le web (arte.tv)
 - sur mobile et tablette (iOS et Android)
@@ -34,7 +34,7 @@ title: Comment ARTE a simplifié le développement multi-plateforme à l’aide 
 
 ### Les particularités des plateformes
 
-Chaque plateforme dispose de ses propres codes et contraintes
+Chaque plateforme dispose de ses propres codes et contraintes :
 
 - contrôle à la souris, au doigt ou à la télécommande
 - accès au réseau (fibre vs 4G)
@@ -60,7 +60,7 @@ Chaque plateforme dispose de ses propres codes et contraintes
 
 ### Approche orientée métier
 
-La structure des premières APIs d'ARTE reflète les entités de la base de données
+La structure des premières APIs d'ARTE reflète les entités de la base de données :
 
 - un endpoint par type d'entité (vidéos, collections, ...)
 - un même endpoint peut servir pour plusieurs cas d'utilisation
@@ -104,7 +104,7 @@ https://www.arte.tv/api/videos?sort=-availabilityDate
 
 ### Une API orientée front (ou BFF)
 
-Le BFF (ou Back-end For Front-end) n'est pas un reflet de la base de données mais un reflet de l'application front
+Le BFF (ou Back-end For Front-end) n'est pas un reflet de la base de données mais un reflet de l'application front :
 
 - renvoie des objets `page` consolidés
 - récupère les données auprès des APIs orientées métier
@@ -164,17 +164,17 @@ structure de l'API = structure des apps front
 - offrir plus de liberté aux front
 - mettre fin au versioning
 
-GraphQL semble plus adapté à une API ouverte qu'à une API spécialisée
+GraphQL semble plus adapté à une API ouverte qu'à une API spécialisée.
 
 ---
 
 <!-- .slide: data-background="./images/background-bicycle.jpg" -->
 
-## Comment eMac permet de simplifier le développement des apps front
+## Comment eMac permet de simplifier le développement des apps front ?
 
 ---
 
-### En facilitant la vie des développeurs front
+### En facilitant la vie des développeurs front :
 
 - une seule API à maîtriser
 - routing simple et peu de paramètres
@@ -182,7 +182,7 @@ GraphQL semble plus adapté à une API ouverte qu'à une API spécialisée
 
 ---
 
-### En offrant plus de flexibilité
+### En offrant plus de flexibilité :
 
 - structure éditable sans mise-à-jour côté front
 - découple les apps front des APIs métier
@@ -195,7 +195,7 @@ GraphQL semble plus adapté à une API ouverte qu'à une API spécialisée
 
 ---
 
-### Le BFF est un concept qui ne convient pas à tout le monde
+### Le BFF est un concept qui ne convient pas à tout le monde :
 
 - nécessite une bonne proximité entre les équipes back et front-end
 - un service de plus à maintenir
@@ -214,7 +214,7 @@ GraphQL semble plus adapté à une API ouverte qu'à une API spécialisée
 - 3 développeurs du côté de Marmelab
 - 2 chefs de projet du côté d'ARTE
 
-Une équipe proche du front, orientée web mais en concertation régulière avec les équipes mobile et TV
+Une équipe proche du front, orientée web mais en concertation régulière avec les équipes mobile et TV.
 
 ---
 
