@@ -97,7 +97,7 @@ https://www.arte.tv/api/videos?sort=-availabilityDate
 
 <!-- .slide: data-background="./images/background-architecture.jpg" -->
 
-## Une API pour les gouverner tous
+## Une API pour les gouverner troutes
 
 ---
 
