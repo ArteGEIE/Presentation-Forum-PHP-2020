@@ -25,10 +25,10 @@ title: Comment ARTE a simplifié le développement multi-plateforme à l’aide 
 
 ### ARTE est disponible partout (ou presque) :
 
-- sur le web (arte.tv)
-- sur mobile et tablette (iOS et Android)
-- sur TV connectée (HbbTV, Apple TV et Android TV)
-- sur les box FAI (Free et Orange)
+- sur le web ([arte.tv](https://www.arte.tv/fr/))
+- sur mobile et tablette ([iOS](https://apps.apple.com/fr/app/arte/id405028510) et [Android](https://play.google.com/store/apps/details?id=tv.arte.plus7&hl=fr&gl=US))
+- sur TV connectée ([HbbTV](https://www.arte.tv/sites/fr/corporate/faq/hbbtv/), [Apple TV](https://apps.apple.com/fr/app/arte/id405028510) et [Android TV](https://play.google.com/store/apps/details?id=tv.arte.plus7&hl=fr&gl=US))
+- sur les box FAI ([Free](https://www.arte.tv/fr/) et [Orange](https://www.arte.tv/fr/))
 
 ---
 
@@ -37,8 +37,8 @@ title: Comment ARTE a simplifié le développement multi-plateforme à l’aide 
 Chaque plateforme dispose de ses propres codes et contraintes :
 
 - contrôle à la souris, au doigt ou à la télécommande
-- accès au réseau (fibre vs 4G)
 - navigation par url ou par deeplink
+- accès au réseau (fibre vs 4G)
 - notifications push
 
 ---
@@ -47,8 +47,8 @@ Chaque plateforme dispose de ses propres codes et contraintes :
 
 ![ARTE partout](images/arte-multi-device.png) <!-- .element width="100%" -->
 
-- structure d'application similaire
 - même catalogue de programmes
+- structure d'application similaire
 
 ---
 
@@ -90,8 +90,7 @@ https://www.arte.tv/api/videos?sort=-availabilityDate
 ### Problématiques de l'approche orientée métier
 
 - beaucoup de calls API par écran
-- beaucoup de paramètres par endpoint
-- API complexe à utiliser
+- API complexe (de nombreux paramètres à maîtriser)
 - contenu des apps front difficile à uniformiser
 
 ---
@@ -198,8 +197,8 @@ GraphQL semble plus adapté à une API ouverte qu'à une API spécialisée.
 ### Le BFF est un concept qui ne convient pas à tout le monde :
 
 - nécessite une bonne proximité entre les équipes back et front-end
-- un service de plus à maintenir
 - l'approche est-elle encore pertinente depuis HTTP/2 ?
+- un service de plus à maintenir
 
 ---
 
@@ -209,10 +208,10 @@ GraphQL semble plus adapté à une API ouverte qu'à une API spécialisée.
 
 ---
 
-### eMac est le fruit d'une collaboration entre ARTE et Marmelab
+### eMac est le fruit d'une collaboration entre [ARTE](https://www.arte.tv/fr/) et [Marmelab](https://marmelab.com/fr/)
 
-- 3 développeurs du côté de Marmelab
 - 2 chefs de projet du côté d'ARTE
+- 3 développeurs du côté de Marmelab
 
 Une équipe proche du front, orientée web mais en concertation régulière avec les équipes mobile et TV.
 
@@ -226,6 +225,8 @@ Une équipe proche du front, orientée web mais en concertation régulière avec
 
 ---
 
-## Merci de nous avoir écoutés !
+### Merci de nous avoir écoutés ! Des questions ?
 
-Des questions ?
+#### Ces slides sont disponibles ici : https://artegeie.github.io/Presentation-Forum-PHP-2020/
+
+##### Retrouvez-nous sur Twitter : [@lucaslegname](https://twitter.com/lucaslegname) / [@rmaximedev](https://twitter.com/rmaximedev)
