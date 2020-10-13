@@ -202,6 +202,14 @@ GraphQL semble plus adapté à une API ouverte qu'à une API spécialisée.
 
 ---
 
+<!-- .slide: data-background="./images/emac-bff.jpg" -->
+
+---
+
+<!-- .slide: data-background="./images/emac-bff-per-app.jpg" -->
+
+---
+
 <!-- .slide: data-background="./images/background-santa-monica.jpg" -->
 
 ## Pour finir...
