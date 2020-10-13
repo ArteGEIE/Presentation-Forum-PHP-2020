@@ -37,9 +37,13 @@ title: Comment ARTE a simplifié le développement multi-plateforme à l’aide 
 Chaque plateforme dispose de ses propres codes et contraintes :
 
 - contrôle à la souris, au doigt ou à la télécommande
-- navigation par url ou par deeplink
-- accès au réseau (fibre vs 4G)
-- notifications push
+- vitesse du réseau (fibre vs 4G)
+- diffusion en direct
+- navigation par deeplinks
+
+---
+
+<!-- .slide: data-background="./images/deeplinks.jpg" -->
 
 ---
 
