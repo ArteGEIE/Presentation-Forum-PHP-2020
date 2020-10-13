@@ -97,7 +97,7 @@ https://www.arte.tv/api/videos?sort=-availabilityDate
 
 <!-- .slide: data-background="./images/background-architecture.jpg" -->
 
-## L'API eMac
+## Une API pour les gouverner toutes
 
 ---
 
@@ -169,7 +169,7 @@ GraphQL semble plus adapté à une API ouverte qu'à une API spécialisée.
 
 <!-- .slide: data-background="./images/background-bicycle.jpg" -->
 
-## Comment eMac permet de simplifier le développement des apps front ?
+## Comment ce BFF permet de simplifier le développement des apps front ?
 
 ---
 
@@ -208,7 +208,7 @@ GraphQL semble plus adapté à une API ouverte qu'à une API spécialisée.
 
 ---
 
-### eMac est le fruit d'une collaboration entre [ARTE](https://www.arte.tv/fr/) et [Marmelab](https://marmelab.com/fr/)
+### Ce projet est le fruit d'une collaboration entre [ARTE](https://www.arte.tv/fr/) et [Marmelab](https://marmelab.com/fr/)
 
 - 2 chefs de projet du côté d'ARTE
 - 3 développeurs du côté de Marmelab
@@ -227,6 +227,8 @@ Une équipe proche du front, orientée web mais en concertation régulière avec
 
 ### Merci de nous avoir écoutés ! Des questions ?
 
-#### Ces slides sont disponibles ici : https://artegeie.github.io/Presentation-Forum-PHP-2020/
+#### Ces slides sont disponibles ici :
+
+#### https://artegeie.github.io/Presentation-Forum-PHP-2020/
 
 ##### Retrouvez-nous sur Twitter : [@lucaslegname](https://twitter.com/lucaslegname) / [@rmaximedev](https://twitter.com/rmaximedev)
