@@ -139,15 +139,11 @@ structure de l'API = structure des apps front
 
 ---
 
-<!-- .slide: data-background="./images/screenshot-page.jpg" -->
+<!-- .slide: data-background="./images/screenshot-page-web.jpg" -->
 
 ---
 
-<!-- .slide: data-background="./images/screenshot-zones.jpg" -->
-
----
-
-<!-- .slide: data-background="./images/screenshot-teasers.jpg" -->
+<!-- .slide: data-background="./images/screenshot-page-ipad.jpg" -->
 
 ---
 
