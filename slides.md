@@ -99,7 +99,7 @@ https://www.arte.tv/api/videos?sort=-availabilityDate
 
 ---
 
-<!-- .slide: data-background="./images/background-architecture.jpg" -->
+<!-- .slide: data-background="./images/background-ring.jpg" -->
 
 ## Une API pour les gouverner toutes
 
