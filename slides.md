@@ -38,12 +38,24 @@ Chaque plateforme dispose de ses propres codes et contraintes :
 
 - contrôle à la souris, au doigt ou à la télécommande
 - vitesse du réseau (fibre vs 4G)
-- diffusion en direct
-- navigation par deeplinks
+- format et résolution d'écran variable
+- navigation par urls ou par liens profonds
 
 ---
 
-<!-- .slide: data-background="./images/deeplinks.jpg" -->
+### Les liens profonds (ou deeplinks)
+
+À chaque url correspond un lien profond.
+
+```json
+{
+  "url": "https://www.arte.tv/fr/videos/097461-000-A/robe-noire/",
+  "deeplink": "arte://program/097461-000-A",
+}
+```
+
+- permet d'accéder directement au contenu
+- compatible iOS, Android, tvOS et Android TV
 
 ---
 
