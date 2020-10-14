@@ -12,7 +12,7 @@ title: Comment ARTE a simplifié le développement multi-plateforme à l’aide 
 
 ![ARTE en bref](images/arte-en-bref.png) <!-- .element width="100%" -->
 
-- disponible en 6 langues
+- disponible en 6 langues (FR, DE, EN, ES, PL et IT)
 - programmes disponibles sur internet depuis 2007
 
 ---
