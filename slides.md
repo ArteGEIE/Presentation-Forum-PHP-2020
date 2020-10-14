@@ -52,7 +52,7 @@ Chaque plateforme dispose de ses propres codes et contraintes :
 ![ARTE partout](images/arte-multi-device.png) <!-- .element width="100%" -->
 
 - même catalogue de programmes
-- structure d'application similaire
+- structures d'application similaires
 
 ---
 
@@ -75,13 +75,13 @@ La structure des premières APIs d'ARTE reflète les entités de la base de donn
 
 Pour récupérer les vidéos les plus vues :
 
-```javascript
+```yaml
 https://www.arte.tv/api/videos?sort=-views
 ```
 
 Pour récupérer les vidéos les plus récentes :
 
-```javascript
+```yaml
 https://www.arte.tv/api/videos?sort=-availabilityDate
 ```
 
@@ -93,7 +93,7 @@ https://www.arte.tv/api/videos?sort=-availabilityDate
 
 ### Problématiques de l'approche orientée métier
 
-- beaucoup de calls API par écran
+- beaucoup d'appels API par écran
 - API complexe (de nombreux paramètres à maîtriser)
 - contenu des apps front difficile à uniformiser
 
@@ -123,7 +123,7 @@ Le BFF (ou Back-end For Front-end) n'est pas un reflet de la base de données ma
 
 structure de l'API = structure des apps front
 
-```javasscript
+```javascript
 [Page]
   - title
   [Zones]
