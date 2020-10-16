@@ -193,7 +193,7 @@ GraphQL semble plus adapté à une API ouverte qu'à une API spécialisée.
 
 ---
 
-### Routes
+### Exemples de routes :
 
 ```yml
 https://www.arte.tv/api/fr/web/pages/home
