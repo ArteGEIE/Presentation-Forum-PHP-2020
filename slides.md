@@ -216,21 +216,35 @@ https://www.arte.tv/api/pl/free/zones/zoneId?page=2&limit=10
 
 ---
 
-### Structure éditable
+#### Modification du format des images
 
 ```json
 {
   "zones": [
     {
-      "title": "Forum PHP 2020",
       "displayOptions": {
-        "zoneLayout": "slider",
-        "itemTemplate": "square"
-      }
-    }
-  ]
+        "itemTemplate": "landscape"
+        ...
 }
 ```
+
+![Display options](images/displayoptions-landscape.png) <!-- .element width="100%" -->
+
+---
+
+#### Modification du format des images
+
+```json
+{
+  "zones": [
+    {
+      "displayOptions": {
+        "itemTemplate": "portrait"
+        ...
+}
+```
+
+![Display options](images/displayoptions-portrait.png) <!-- .element width="100%" -->
 
 ---
 
