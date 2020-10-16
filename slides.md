@@ -50,7 +50,7 @@ Chaque plateforme dispose de ses propres codes et contraintes :
 ```json
 {
   "url": "https://www.arte.tv/fr/videos/097461-000-A/robe-noire/",
-  "deeplink": "arte://program/097461-000-A",
+  "deeplink": "arte://program/097461-000-A"
 }
 ```
 
@@ -135,7 +135,7 @@ Le BFF (ou Back-end For Front-end) n'est pas un reflet de la base de données ma
 
 structure de l'API = structure des apps front
 
-```javascript
+```yaml
 [Page]
   - title
   [Zones]
@@ -188,15 +188,63 @@ GraphQL semble plus adapté à une API ouverte qu'à une API spécialisée.
 ### En facilitant la vie des développeurs front :
 
 - une seule API à maîtriser
-- routing simple et peu de paramètres
 - plus besoin de se soucier des problématiques métier
+- routing simple
+
+---
+
+### Exemples de routes :
+
+```yml
+https://www.arte.tv/api/fr/web/pages/home
+
+https://www.arte.tv/api/de/app/pages/concert
+
+https://www.arte.tv/api/en/tv/pages/categories/cinema
+
+https://www.arte.tv/api/it/orange/pages/programs/programId
+
+https://www.arte.tv/api/pl/free/zones/zoneId?page=2&limit=10
+```
 
 ---
 
 ### En offrant plus de flexibilité :
 
-- structure éditable sans mise-à-jour côté front
 - découple les apps front des APIs métier
+- structure éditable sans mise-à-jour côté front
+
+---
+
+#### Modification du format des images
+
+```json
+{
+  "zones": [
+    {
+      "displayOptions": {
+        "itemTemplate": "landscape"
+        ...
+}
+```
+
+![Display options](images/displayoptions-landscape.png) <!-- .element width="100%" -->
+
+---
+
+#### Modification du format des images
+
+```json
+{
+  "zones": [
+    {
+      "displayOptions": {
+        "itemTemplate": "portrait"
+        ...
+}
+```
+
+![Display options](images/displayoptions-portrait.png) <!-- .element width="100%" -->
 
 ---
 
@@ -239,9 +287,9 @@ Une équipe proche du front, orientée web mais en concertation régulière avec
 
 ### Références
 
-- BFFs and GraphQL, terms you should know and why - Chris BAILEY : https://www.youtube.com/watch?v=B5OdK21ZevI
 - ARTE’s API strategy & architecture - Matthieu BREEN : https://www.youtube.com/watch?v=bsCOU7131lM
 - 6play_API-v2-Final(1).doc - Benoit VIGUIER : https://www.youtube.com/watch?v=Y_umU8mTWho
+- BFFs and GraphQL, terms you should know and why - Chris BAILEY : https://www.youtube.com/watch?v=B5OdK21ZevI
 
 ---
 
