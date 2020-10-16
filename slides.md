@@ -286,7 +286,3 @@ Une équipe proche du front, orientée web mais en concertation régulière avec
 #### https://artegeie.github.io/Presentation-Forum-PHP-2020/
 
 ##### Retrouvez-nous sur Twitter : [@lucaslegname](https://twitter.com/lucaslegname) / [@rmaximedev](https://twitter.com/rmaximedev)
-
-```
-
-```
