@@ -1,10 +1,10 @@
 ---
-title: Comment ARTE a simplifié le développement multi-plateforme à l’aide d’une API orientée front ?
+title: Comment ARTE a simplifié le développement multi-plateforme à l’aide d’une API orientée front
 ---
 
 <!-- .slide: data-background="./images/background-cheers.jpg" -->
 
-## Comment ARTE a simplifié le développement multi-plateforme à l’aide d’une API orientée front ?
+## Comment ARTE a simplifié le développement multi-plateforme à l’aide d’une API orientée front
 
 ---
 
