@@ -131,6 +131,10 @@ Le BFF (ou Back-end For Front-end) n'est pas un reflet de la base de données ma
 
 ---
 
+<!-- .slide: data-background="./images/emac-bff-details.jpg" -->
+
+---
+
 ### Une API au service du front
 
 structure de l'API = structure des apps front
@@ -165,7 +169,7 @@ structure de l'API = structure des apps front
 
 <!-- .slide: data-background="./images/background-cirque.jpg" -->
 
-## Et pourquoi pas GraphQL ?
+## Pourquoi ne pas utiliser GraphQL côté front ?
 
 ---
 
@@ -250,11 +254,11 @@ https://www.arte.tv/api/pl/free/zones/zoneId?page=2&limit=10
 
 ### Avant et après la mise en place du BFF :
 
-|                                                                     |     Avant       |   Après    |
-| ------------------------------------------------------------------- |:---------------:|:----------:|
-| Nombre d'APIs à implémenter / app front                             | 5               | 2          |
-| Nombre d'appels pour afficher la page d'accueil                     | 20              | 1          |
-| Nombre de déploiements nécessaires pour modifier la page d'accueil  | 8               | 0          |
+|                                                                    | Avant | Après |
+| ------------------------------------------------------------------ | :---: | :---: |
+| Nombre d'APIs à implémenter / app front                            |   5   |   2   |
+| Nombre d'appels pour afficher la page d'accueil                    |  20   |   1   |
+| Nombre de déploiements nécessaires pour modifier la page d'accueil |   8   |   0   |
 
 ---
 
