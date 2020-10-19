@@ -200,15 +200,15 @@ GraphQL semble plus adapté à une API ouverte qu'à une API spécialisée.
 ### Exemples de routes :
 
 ```yml
-https://www.arte.tv/api/fr/web/pages/home
+https://domain/api/bff/fr/web/pages/home
 
-https://www.arte.tv/api/de/app/pages/concert
+https://domain/api/bff/de/app/pages/concert
 
-https://www.arte.tv/api/en/tv/pages/categories/cinema
+https://domain/api/bff/en/tv/pages/categories/cinema
 
-https://www.arte.tv/api/it/orange/pages/programs/programId
+https://domain/api/bff/it/orange/pages/programs/programId
 
-https://www.arte.tv/api/pl/free/zones/zoneId?page=2&limit=10
+https://domain/api/bff/pl/free/zones/zoneId?page=2&limit=10
 ```
 
 ---
