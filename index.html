@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>Comment ARTE a simplifié le développement multi-plateforme à l’aide d’une API orientée front ?</title>
+    <title>Comment ARTE a simplifié le développement multi-plateforme à l’aide d’une API orientée front</title>
     <link rel="shortcut icon" href="./favicon.ico"/>
     <link rel="stylesheet" href="./dist/reveal.css" />
     <link rel="stylesheet" href="_assets/arte.css" id="theme" />
@@ -17,7 +17,7 @@
 
 <!-- .slide: data-background="./images/background-cheers.jpg" -->
 
-## Comment ARTE a simplifié le développement multi-plateforme à l’aide d’une API orientée front ?
+## Comment ARTE a simplifié le développement multi-plateforme à l’aide d’une API orientée front
 </script></section><section  data-markdown><script type="text/template">
 #### ARTE est une chaîne de télévision culturelle européenne :
 
@@ -36,6 +36,13 @@
 - sur mobile et tablette ([iOS](https://apps.apple.com/fr/app/arte/id405028510) et [Android](https://play.google.com/store/apps/details?id=tv.arte.plus7&hl=fr&gl=US))
 - sur TV connectée ([HbbTV](https://www.arte.tv/sites/fr/corporate/faq/hbbtv/), [Apple TV](https://apps.apple.com/fr/app/arte/id405028510) et [Android TV](https://play.google.com/store/apps/details?id=tv.arte.plus7&hl=fr&gl=US))
 - sur les box FAI ([Free](https://www.arte.tv/fr/) et [Orange](https://www.arte.tv/fr/))
+</script></section><section  data-markdown><script type="text/template">
+### Supports différents, expérience unifiée
+
+![ARTE partout](images/arte-multi-device.png) <!-- .element width="100%" -->
+
+- même catalogue de programmes
+- structures d'application similaires
 </script></section><section  data-markdown><script type="text/template">
 ### Les particularités des plateformes
 
@@ -59,13 +66,6 @@ Chaque plateforme dispose de ses propres codes et contraintes :
 
 - permet d'accéder directement au contenu
 - compatible iOS, Android, tvOS et Android TV
-</script></section><section  data-markdown><script type="text/template">
-### Supports différents, expérience unifiée
-
-![ARTE partout](images/arte-multi-device.png) <!-- .element width="100%" -->
-
-- même catalogue de programmes
-- structures d'application similaires
 </script></section><section  data-markdown><script type="text/template">
 <!-- .slide: data-background="./images/background-cassette.jpg" -->
 
@@ -208,6 +208,14 @@ https://www.arte.tv/api/pl/free/zones/zoneId?page=2&limit=10
 ```
 
 ![Display options](images/displayoptions-portrait.png) <!-- .element width="100%" -->
+</script></section><section  data-markdown><script type="text/template">
+### Avant et après la mise en place du BFF :
+
+|                                                                     |     Avant       |   Après    |
+| ------------------------------------------------------------------- |:---------------:|:----------:|
+| Nombre d'APIs à implémenter / app front                             | 5               | 2          |
+| Nombre d'appels pour afficher la page d'accueil                     | 20              | 1          |
+| Nombre de déploiements nécessaires pour modifier la page d'accueil  | 8               | 0          |
 </script></section><section  data-markdown><script type="text/template">
 <!-- .slide: data-background="./images/background-summer.jpg" -->
 
