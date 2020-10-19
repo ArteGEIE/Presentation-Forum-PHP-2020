@@ -248,6 +248,16 @@ https://www.arte.tv/api/pl/free/zones/zoneId?page=2&limit=10
 
 ---
 
+### Avant et après la mise en place du BFF :
+
+|                                                                     |     Avant       |   Après    |
+| ------------------------------------------------------------------- |:---------------:|:----------:|
+| Nombre d'APIs à implémenter / app front                             | 5               | 2          |
+| Nombre d'appels pour afficher la page d'accueil                     | 20              | 1          |
+| Nombre de déploiements nécessaires pour modifier la page d'accueil  | 8               | 0          |
+
+---
+
 <!-- .slide: data-background="./images/background-summer.jpg" -->
 
 ## Une approche idéale ?
