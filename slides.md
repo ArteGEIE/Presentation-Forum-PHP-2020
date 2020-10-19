@@ -1,10 +1,10 @@
 ---
-title: Comment ARTE a simplifié le développement multi-plateforme à l’aide d’une API orientée front ?
+title: Comment ARTE a simplifié le développement multi-plateforme à l’aide d’une API orientée front
 ---
 
 <!-- .slide: data-background="./images/background-cheers.jpg" -->
 
-## Comment ARTE a simplifié le développement multi-plateforme à l’aide d’une API orientée front ?
+## Comment ARTE a simplifié le développement multi-plateforme à l’aide d’une API orientée front
 
 ---
 
@@ -32,6 +32,15 @@ title: Comment ARTE a simplifié le développement multi-plateforme à l’aide 
 
 ---
 
+### Supports différents, expérience unifiée
+
+![ARTE partout](images/arte-multi-device.png) <!-- .element width="100%" -->
+
+- même catalogue de programmes
+- structures d'application similaires
+
+---
+
 ### Les particularités des plateformes
 
 Chaque plateforme dispose de ses propres codes et contraintes :
@@ -56,15 +65,6 @@ Chaque plateforme dispose de ses propres codes et contraintes :
 
 - permet d'accéder directement au contenu
 - compatible iOS, Android, tvOS et Android TV
-
----
-
-### Supports différents, expérience unifiée
-
-![ARTE partout](images/arte-multi-device.png) <!-- .element width="100%" -->
-
-- même catalogue de programmes
-- structures d'application similaires
 
 ---
 
@@ -245,6 +245,16 @@ https://www.arte.tv/api/pl/free/zones/zoneId?page=2&limit=10
 ```
 
 ![Display options](images/displayoptions-portrait.png) <!-- .element width="100%" -->
+
+---
+
+### Avant et après la mise en place du BFF :
+
+|                                                                     |     Avant       |   Après    |
+| ------------------------------------------------------------------- |:---------------:|:----------:|
+| Nombre d'APIs à implémenter / app front                             | 5               | 2          |
+| Nombre d'appels pour afficher la page d'accueil                     | 20              | 1          |
+| Nombre de déploiements nécessaires pour modifier la page d'accueil  | 8               | 0          |
 
 ---
 
