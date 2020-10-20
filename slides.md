@@ -88,13 +88,13 @@ La structure des premières APIs d'ARTE reflète les entités de la base de donn
 Pour récupérer les vidéos les plus vues :
 
 ```yaml
-https://www.arte.tv/api/videos?sort=-views
+https://api-arte/videos?sort=-views
 ```
 
 Pour récupérer les vidéos les plus récentes :
 
 ```yaml
-https://www.arte.tv/api/videos?sort=-availabilityDate
+https://api-arte/videos?sort=-availabilityDate
 ```
 
 ---
@@ -200,15 +200,15 @@ GraphQL semble plus adapté à une API ouverte qu'à une API spécialisée.
 ### Exemples de routes :
 
 ```yml
-https://domain/api/bff/fr/web/pages/home
+https://bff-arte/fr/web/pages/home
 
-https://domain/api/bff/de/app/pages/concert
+https://bff-arte/de/app/pages/concert
 
-https://domain/api/bff/en/tv/pages/categories/cinema
+https://bff-arte/en/tv/pages/categories/cinema
 
-https://domain/api/bff/it/orange/pages/programs/programId
+https://bff-arte/it/orange/pages/programs/programId
 
-https://domain/api/bff/pl/free/zones/zoneId?page=2&limit=10
+https://bff-arte/pl/free/zones/zoneId?page=2&limit=10
 ```
 
 ---
