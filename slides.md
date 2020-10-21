@@ -179,7 +179,7 @@ structure de l'API = structure des apps front
 - offrir plus de liberté aux front
 - mettre fin au versioning
 
-GraphQL semble plus adapté à une API ouverte qu'à une API spécialisée.
+GraphQL semble plus adapté à une API publique qu'à une API interne.
 
 ---
 
